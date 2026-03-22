@@ -1,6 +1,5 @@
-function hola(nombre: number) : string
-{
-    return `Hola ${nombre}`;
+function hola(nombre: string) : string {
+  return `Hola ${nombre}`;
 }
 
 console.log(hola('Antonio'));
