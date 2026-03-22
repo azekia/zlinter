@@ -4,8 +4,8 @@ export default defineConfig([{
   rules: {
     'no-param-reassign': ['off'],
     'linebreak-style': ['off', 'unix'],
-    // 'import/extensions': ['error', 'always', { ignorePackages: true }],
-    // 'import/no-absolute-path': ['error'],
+    // 'import/extensions': ['error', 'ignorePackages', { '': 'never' }],    <<<<<<<< not supported for eslint v10
+    // 'import/no-absolute-path': ['error'], <<<<<<<< not supported for eslint v10
     'no-console': ['warn', { allow: ['log', 'warn', 'error', 'time', 'timeEnd'] }],
     'no-plusplus': 'off',
     'class-methods-use-this': ['off'],

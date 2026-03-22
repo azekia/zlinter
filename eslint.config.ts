@@ -1,4 +1,5 @@
 import js from '@eslint/js';
+// import importPlugin from 'eslint-plugin-import';  <<<<<<<< not supported for eslint v10
 import globals from 'globals';
 import tseslint from 'typescript-eslint';
 import { defineConfig } from 'eslint/config';
@@ -14,7 +15,7 @@ import rulesZenon from './rules/zenon.ts';
 export default defineConfig([
   {
     files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
-    plugins: { js },
+    plugins: { js /* , importPlugin */ },
     extends: ['js/recommended'],
     languageOptions: {
       // ecmaVersion: 2022,
