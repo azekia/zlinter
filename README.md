@@ -2,9 +2,11 @@
 
 Nueva configuración de linter para proyectos zenon, con soporte Typescript y prettier integrado...
 
+Sustituye a `zlinter-config` y `zprettier-config` (que se quedan obsoletos, reservados para proyectos anteriores).
+
 > TODO: Convertir esto en algo que se instale en segundos en un proyecto...
 
-## Cómo he activado prettier en este repositorio
+### Cómo he activado prettier en este repositorio
 
 ```bash
 npm i --save-dev prettier
@@ -46,11 +48,11 @@ npm i --save-dev prettier
 }
 ```
 
-## Cómo se inicializó este repositorio para eslint
+### Cómo se inicializó este repositorio para eslint
 
 https://eslint.org/docs/latest/use/getting-started
 
-### Inicializamos `package.json`
+#### Inicializamos `package.json`
 
 ```txt
 > npm init
@@ -80,7 +82,7 @@ About to write to C:\Users\antonio\source\zlinter\package.json:
 }
 ```
 
-### Creamos `eslint.config.ts`
+#### Creamos `eslint.config.ts`
 
 ```bash
 > npm init @eslint/config@latest
@@ -138,7 +140,7 @@ export default defineConfig([
 ]);
 ```
 
-### Probamos que se ejecuta
+#### Probamos que se ejecuta
 
 ```bash
 npx eslint *
