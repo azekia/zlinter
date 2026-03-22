@@ -8,3 +8,9 @@ probando que se lintea con prettier
 - lista2
 - lista3
 - lista4
+
+> blockquote
+
+```js
+console.log('hola mundo');
+```

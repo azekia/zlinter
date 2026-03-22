@@ -1,3 +1,4 @@
+// style.ts ============================================================
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([{
@@ -144,7 +145,9 @@ export default defineConfig([{
       ImportDeclaration: 1,
       flatTernaryExpressions: false,
       // list derived from https://github.com/benjamn/ast-types/blob/HEAD/def/jsx.js
-      ignoredNodes: ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression', 'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment', 'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild'],
+      ignoredNodes: ['JSXElement', 'JSXElement > *', 'JSXAttribute', 'JSXIdentifier', 'JSXNamespacedName', 'JSXMemberExpression',
+        'JSXSpreadAttribute', 'JSXExpressionContainer', 'JSXOpeningElement', 'JSXClosingElement', 'JSXFragment', 'JSXOpeningFragment',
+        'JSXClosingFragment', 'JSXText', 'JSXEmptyExpression', 'JSXSpreadChild'],
       ignoreComments: false,
     }],
 
@@ -336,11 +339,13 @@ export default defineConfig([{
       'error',
       {
         selector: 'ForInStatement',
-        message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. Use Object.{keys,values,entries}, and iterate over the resulting array.',
+        message: 'for..in loops iterate over the entire prototype chain, which is virtually never what you want. '
+        + 'Use Object.{keys,values,entries}, and iterate over the resulting array.',
       },
       {
         selector: 'ForOfStatement',
-        message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. Separately, loops should be avoided in favor of array iterations.',
+        message: 'iterators/generators require regenerator-runtime, which is too heavyweight for this guide to allow them. '
+        + 'Separately, loops should be avoided in favor of array iterations.',
       },
       {
         selector: 'LabeledStatement',

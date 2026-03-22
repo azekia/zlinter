@@ -1,3 +1,4 @@
+// variables.ts ============================================================
 // import confusingBrowserGlobals from 'confusing-browser-globals';
 import { defineConfig } from 'eslint/config';
 

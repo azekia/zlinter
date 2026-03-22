@@ -1,3 +1,9 @@
+# `zlinter`
+
+Nueva configuración de linter para proyectos zenon, con soporte Typescript y prettier integrado...
+
+> TODO: Convertir esto en algo que se instale en segundos en un proyecto...
+
 ## Cómo he activado prettier en este repositorio
 
 ```bash

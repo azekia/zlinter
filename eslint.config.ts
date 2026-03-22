@@ -1,3 +1,5 @@
+// eslint.config.ts ==================================================================
+
 import js from '@eslint/js';
 // import importPlugin from 'eslint-plugin-import';  <<<<<<<< not supported for eslint v10
 import globals from 'globals';
