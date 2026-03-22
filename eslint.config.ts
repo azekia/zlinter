@@ -1,19 +1,15 @@
-import js from "@eslint/js";
-import globals from "globals";
-import tseslint from "typescript-eslint";
-import { defineConfig } from "eslint/config";
-import rulesBestPractices from "./rules/best-practices.ts";
-
-const a ="hola";
-const b ="adios";
-if (a==b) {
-
-}
+import js from '@eslint/js';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+import { defineConfig } from 'eslint/config';
+import rulesBestPractices from './rules/best-practices.ts';
+import rulesStyle from './rules/style.ts';
 
 export default defineConfig([
-  { files: ["**/*.{js,mjs,cjs,ts,mts,cts}"], 
-    plugins: { js }, 
-    extends: ["js/recommended"], 
+  {
+    files: ['**/*.{js,mjs,cjs,ts,mts,cts}'],
+    plugins: { js },
+    extends: ['js/recommended'],
     languageOptions: {
       // ecmaVersion: 2022,
       // sourceType: 'module',
@@ -33,4 +29,5 @@ export default defineConfig([
   },
   tseslint.configs.recommended,
   rulesBestPractices,
+  rulesStyle,
 ]);
