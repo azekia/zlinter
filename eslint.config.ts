@@ -4,6 +4,7 @@ import tseslint from 'typescript-eslint';
 import { defineConfig } from 'eslint/config';
 import rulesBestPractices from './rules/best-practices.ts';
 import rulesStyle from './rules/style.ts';
+import rulesEs
 
 export default defineConfig([
   {
