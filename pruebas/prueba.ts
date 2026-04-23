@@ -3,3 +3,5 @@ function hola(nombre: string): string {
 }
 
 console.log(hola('Antonio José'));
+
+export { hola };
