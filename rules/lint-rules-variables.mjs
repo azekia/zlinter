@@ -1,8 +1,6 @@
-// variables.ts ============================================================
-// import confusingBrowserGlobals from 'confusing-browser-globals';
-import { defineConfig } from 'eslint/config';
+import confusingBrowserGlobals from 'confusing-browser-globals';
 
-export default defineConfig([{
+export default {
   rules: {
     // enforce or disallow variable initializations at definition
     'init-declarations': 'off',
@@ -30,7 +28,7 @@ export default defineConfig([{
         message:
           'Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan',
       },
-    ], // ().concat(confusingBrowserGlobals),
+    ].concat(confusingBrowserGlobals),
 
     // disallow declaration of variables already declared in the outer scope
     'no-shadow': 'error',
@@ -55,4 +53,4 @@ export default defineConfig([{
     // disallow use of variables before they are defined
     'no-use-before-define': ['error', { functions: true, classes: true, variables: true }],
   },
-}]);
+};

@@ -1,13 +1,11 @@
-// zenon.ts ============================================================
-import { defineConfig } from 'eslint/config';
-
-export default defineConfig([{
+export default {
   rules: {
+    '@typescript-eslint/no-explicit-any': ['off'],
     'no-param-reassign': ['off'],
     'linebreak-style': ['off', 'unix'],
-    // 'import/extensions': ['error', 'ignorePackages', { '': 'never' }],    <<<<<<<< not supported for eslint v10
-    // 'import/no-absolute-path': ['error'], <<<<<<<< not supported for eslint v10
-    'no-console': ['warn', { allow: ['log', 'warn', 'error', 'time', 'timeEnd'] }],
+    'import/extensions': ['error', 'always', { ignorePackages: true }],
+    'import/no-absolute-path': ['error'],
+    'no-console': ['warn', { allow: ['log', 'warn', 'error'] }],
     'no-plusplus': 'off',
     'class-methods-use-this': ['off'],
     'max-len': [
@@ -22,4 +20,4 @@ export default defineConfig([{
       },
     ],
   },
-}]);
+};

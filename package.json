@@ -5,14 +5,20 @@
   "license": "MIT",
   "author": "",
   "type": "module",
-  "main": "index.mts",
+  "main": "index.js",
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "@types/confusing-browser-globals": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.59.0",
+    "@typescript-eslint/parser": "^8.59.0",
     "confusing-browser-globals": "^1.0.11",
-    "eslint": "^10.1.0",
-    "globals": "^17.4.0",
-    "jiti": "^2.6.1",
-    "prettier": "^3.8.1",
-    "typescript-eslint": "^8.57.1"
-  }
+    "eslint": "^9.39.4",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-prettier": "^5.5.5",
+    "globals": "^17.5.0",
+    "mocha": "^10.2.0",
+    "semver": "^7.7.4",
+    "typescript-eslint": "^8.59.0"
+  },
+  "prettier": "./zenonPrettierConfig.js"
 }

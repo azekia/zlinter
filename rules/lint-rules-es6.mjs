@@ -1,7 +1,4 @@
-// es6.ts ============================================================
-import { defineConfig } from 'eslint/config';
-
-export default defineConfig([{
+export default {
   /* env: {
       es6: true
     },
@@ -185,4 +182,4 @@ export default defineConfig([{
     // https://eslint.org/docs/rules/yield-star-spacing
     'yield-star-spacing': ['error', 'after'],
   },
-}]);
+};

@@ -1,7 +1,4 @@
-// node.ts ============================================================
-import { defineConfig } from 'eslint/config';
-
-export default defineConfig([{
+export default {
   /* env: {
       node: true
     }, */
@@ -43,4 +40,4 @@ export default defineConfig([{
     // disallow use of synchronous methods (off by default)
     'no-sync': 'off',
   },
-}]);
+};

@@ -1,7 +1,4 @@
-// best-practices.ts ============================================================
-import { defineConfig } from 'eslint/config';
-
-export default defineConfig([{
+export default {
   rules: {
     // enforces getter/setter pairs in objects
     // https://eslint.org/docs/rules/accessor-pairs
@@ -408,4 +405,4 @@ export default defineConfig([{
     // https://eslint.org/docs/rules/yoda
     yoda: 'error',
   },
-}]);
+};

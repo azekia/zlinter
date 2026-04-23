@@ -1,7 +1,4 @@
-// errors.ts ============================================================
-import { defineConfig } from 'eslint/config';
-
-export default defineConfig([{
+export default {
   rules: {
     // Enforce “for” loop update clause moving the counter in the right direction
     // https://eslint.org/docs/rules/for-direction
@@ -179,4 +176,4 @@ export default defineConfig([{
     // https://eslint.org/docs/rules/valid-typeof
     'valid-typeof': ['error', { requireStringLiterals: true }],
   },
-}]);
+};
