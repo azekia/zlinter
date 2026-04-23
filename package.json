@@ -6,7 +6,7 @@
   "author": "",
   "type": "module",
   "main": "index.js",
-  "devDependencies": {
+  "dependencies": {
     "@stylistic/eslint-plugin": "^5.10.0",
     "@types/confusing-browser-globals": "^1.0.3",
     "@typescript-eslint/eslint-plugin": "^8.59.0",
