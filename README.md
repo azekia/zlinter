@@ -6,7 +6,95 @@ Sustituye a `zlinter-config` y `zprettier-config` (que se quedan obsoletos, rese
 
 > TODO: Convertir esto en algo que se instale en segundos en un proyecto...
 
+### Cómo instalar este linter en un proyecto
+
+```bash
+npm install --save-dev eslint
+npm install --save-dev prettier
+npm install --save-dev github:azekia/zlinter-config
+```
+
+Crea este archivo `.prettierignore`
+
+```
+*.ejs
+*.cjs
+*.mjs
+*.js
+*.ts
+```
+
+Crea este archivo `.prettierrc.js`
+
+```js
+import zl from 'zlinter';
+export default zl.zenonPrettierConfig;
+```
+
+Crea este archivo `.eslint.config.js`
+
+```js
+import zl from 'zlinter';
+export default zl.zenonEslintConfig;
+```
+
+Crea este archivo `tsconfig.json` por ejemplo...
+
+```json
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "include": ["both/zenon/zcl/**/*"],
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "nodenext",
+    "target": "esnext",
+    "lib": ["esnext"],
+    "types": ["node"],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true
+  }
+}
+```
+
 ### Cómo he activado prettier en este repositorio
+
+Esto ha sido necesario para que este propio repositorio sea tratado por prettier
 
 ```bash
 npm i --save-dev prettier

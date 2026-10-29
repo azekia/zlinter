@@ -30,6 +30,8 @@ export default [
         beforeEach: 'readonly',
         after: 'readonly',
         afterEach: 'readonly',
+        google: 'readonly',
+        msal: 'readonly',
       },
     },
   },
